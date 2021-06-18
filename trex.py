@@ -5,7 +5,6 @@ pygame.init()
 screen = pygame.display.set_mode((1200, 400))
 
 dino_rect = pygame.Rect(100, 250, 64, 64)
-cactus_rect = pygame.Rect(1100, 300, 32, 32)
 
 while True:
     screen.fill((255, 255, 255))
@@ -15,7 +14,6 @@ while True:
             sys.exit()
 
     pygame.draw.rect(screen, (100, 100, 100), dino_rect)
-    pygame.draw.rect(screen, (100, 100, 100), cactus_rect)
     
     pygame.display.update()
     
